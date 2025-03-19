@@ -4,7 +4,7 @@ import { CartAppComponent } from './components/cart-app.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CartAppComponent],
+  imports: [CartAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

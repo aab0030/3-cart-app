@@ -9,7 +9,7 @@ export class SharingDataService {
   private _idProductEventEmitter: EventEmitter<number> = new EventEmitter();
 
   private _productEventEmitter: EventEmitter<Product> = new EventEmitter();
-
+  
   constructor() { }
 
   get productEventEmitter(): EventEmitter<Product> {

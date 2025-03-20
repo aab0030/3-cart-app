@@ -1,37 +1,5 @@
-<!-- Forma 1
- <navbar [items]="items" (openEventEmitter)="openCart()"/>
-
-<div class="container my-4">
-    <h2>Catálogo de productos App</h2>
-
-    <div class="row">
-        <div [className]="showCart? 'col-9': 'col'">
-            <catalog [products]="products"
-                    (productEventEmitter)="onAddCart($event)"/>
-        </div>
-        @if (showCart) {
-            <div class="col-2 mx-1">
-                @if (items.length > 0) {
-                    <cart 
-                    [items]="items"
-                    [total]="total"
-                    (idProductEventEmitter)="onDeleteCart($event)"/>
-                    <button class="btn btn-secondary btn-sm float-end" (click)="openCart()">
-                        Cerrar carrito
-                    </button>
-                } @else {
-                    <div class="alert alert-warning">No hay elementos en el carro</div>
-                }
-            </div>
-        }
-    </div>
-</div> -->
-
 <navbar 
-[items]="items" 
-[total]="total"
-[products]="products"
-/>
+[items]="items" />
 
 <div class="container my-4">
     <router-outlet></router-outlet>
